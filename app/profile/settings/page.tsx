@@ -1,5 +1,5 @@
 "use client"
-import type { Metadata } from "next"
+ 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -10,12 +10,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Switch } from "@/components/ui/switch"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useLanguage } from "@/contexts/language-context"
-
-export const metadata: Metadata = {
-  title: "Profile Settings - CPC Georgia",
-  description: "Manage your account settings",
-}
-
 export default function SettingsPage() {
   const { t, language } = useLanguage()
   return (

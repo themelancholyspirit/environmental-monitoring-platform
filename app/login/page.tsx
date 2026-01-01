@@ -1,5 +1,4 @@
 "use client"
-import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -7,10 +6,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLanguage } from "@/contexts/language-context"
 
-export const metadata: Metadata = {
-  title: "Login - CPC Georgia",
-  description: "Login to your CPC Georgia account",
-}
+// Removed disallowed metadata export
 
 export default function LoginPage() {
   const { t, language } = useLanguage()

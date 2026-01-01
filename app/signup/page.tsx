@@ -1,5 +1,5 @@
 "use client"
-import type { Metadata } from "next"
+// Client component for using language context
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -8,10 +8,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Checkbox } from "@/components/ui/checkbox"
 import { useLanguage } from "@/contexts/language-context"
 
-export const metadata: Metadata = {
-  title: "Sign Up - CPC Georgia",
-  description: "Create your CPC Georgia account",
-}
 
 export default function SignupPage() {
   const { t, language } = useLanguage()

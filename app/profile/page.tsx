@@ -1,5 +1,5 @@
 "use client"
-import type { Metadata } from "next"
+ 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -7,12 +7,6 @@ import { Badge } from "@/components/ui/badge"
 import { MapPin, Mail, Calendar, Award, AlertTriangle, FileText, Users } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
-
-export const metadata: Metadata = {
-  title: "Profile - CPC Georgia",
-  description: "Your CPC Georgia profile",
-}
-
 export default function ProfilePage() {
   const { t, language } = useLanguage()
   return (

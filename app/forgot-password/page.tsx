@@ -1,5 +1,5 @@
 "use client"
-import type { Metadata } from "next"
+ 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -7,11 +7,6 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
-
-export const metadata: Metadata = {
-  title: "Forgot Password - CPC Georgia",
-  description: "Reset your password",
-}
 
 export default function ForgotPasswordPage() {
   const { t, language } = useLanguage()
